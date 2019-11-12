@@ -1,0 +1,19 @@
+<!-- Create Michal Fujak @ Programmer -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.: [ Backed NodeJS @ Michal Fujak ] :.</title>
+    </head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('broadcast', function(data){
+            document.writeln(data);
+        });
+    </script>
+    <body>
+        <h1>
+            This is backed!
+        </h1>
+    </body>
+</html>
